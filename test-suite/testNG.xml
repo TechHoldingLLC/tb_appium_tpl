@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Non BLE flows by device name">
+    <listeners>
+        <listener class-name="utilities.TestListener"></listener>
+    </listeners>
+    <suite-files>
+       <!-- <suite-file path="testNG-nonBLEflows.xml"></suite-file>-->
+        <suite-file path="testNG-iOS.xml"></suite-file>
+        <suite-file path="testNG-Android.xml"></suite-file>
+
+    </suite-files>
+
+</suite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testing Therabody App]" guice-stage="DEVELOPMENT">
+  <parameter name="platform" value="Android"/>
+  <test thread-count="5" name="Non BLE Flows by Device Name: Theragun Liv(failed)">
+    <parameter name="device" value="Theragun Liv"/>
+    <parameter name="email" value="karishma.barot@techholding.co"/>
+    <classes>
+      <class name="testCases.LoginTCs">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.LoginTCs -->
+      <class name="testCases.NonBLECommanTCs">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testBreakToggle"/>
+          <include name="testSaveRoutineFromOverviewScreen"/>
+          <include name="testTipForNonBLE"/>
+          <include name="testNotConnectedMode"/>
+          <include name="testStretchingStep"/>
+          <include name="testForgetDevice"/>
+          <include name="startAppiumServer"/>
+          <include name="testUnSaveRoutineFromRoutineCompletionScreen"/>
+          <include name="testRoutineCompletionForNonBLE"/>
+          <include name="testPreferencesOnProfile"/>
+          <include name="testUnSaveRoutineFromSavedTab"/>
+          <include name="testSaveRoutineFromCompletionScreen"/>
+          <include name="testSelectRoutine"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- testCases.NonBLECommanTCs -->
+    </classes>
+  </test> <!-- Non BLE Flows by Device Name: Theragun Liv(failed) -->
+</suite> <!-- Failed suite [Testing Therabody App] -->
