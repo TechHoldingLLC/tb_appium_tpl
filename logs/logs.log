@@ -1,0 +1,590 @@
+[DEBUG] 2024-05-13 15:22:16.765 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2024-05-13 15:22:16.776 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2024-05-13 15:22:16.777 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2024-05-13 15:22:16.781 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5cad8b7d
+[DEBUG] 2024-05-13 15:22:16.797 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2024-05-13 15:22:16.797 [main] PlatformDependent0 - Java version: 19
+[DEBUG] 2024-05-13 15:22:16.798 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2024-05-13 15:22:16.798 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2024-05-13 15:22:16.799 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2024-05-13 15:22:16.799 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2024-05-13 15:22:16.800 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2024-05-13 15:22:16.800 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2024-05-13 15:22:16.801 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @2752f6e2
+[DEBUG] 2024-05-13 15:22:16.802 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[DEBUG] 2024-05-13 15:22:16.802 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2024-05-13 15:22:16.803 [main] PlatformDependent - maxDirectMemory: 4294967296 bytes (maybe)
+[DEBUG] 2024-05-13 15:22:16.803 [main] PlatformDependent - -Dio.netty.tmpdir: /var/folders/zr/572jgrt10ws3l2y8jwbmjs4h0000gq/T (java.io.tmpdir)
+[DEBUG] 2024-05-13 15:22:16.803 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2024-05-13 15:22:16.803 [main] PlatformDependent - Platform: MacOS
+[DEBUG] 2024-05-13 15:22:16.804 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2024-05-13 15:22:16.804 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2024-05-13 15:22:16.805 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2024-05-13 15:22:16.805 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2024-05-13 15:22:16.811 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2024-05-13 15:22:16.829 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2024-05-13 15:22:16.830 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2024-05-13 15:22:16.981 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2024-05-13 15:22:16.981 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2024-05-13 15:22:17.000 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2024-05-13 15:22:17.017 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+[DEBUG] 2024-05-13 15:22:17.026 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2024-05-13 15:22:17.027 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2024-05-13 15:22:17.055 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2024-05-13 15:22:17.056 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2024-05-13 15:22:17.057 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2024-05-13 15:22:17.067 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2024-05-13 15:22:17.068 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2024-05-13 15:22:17.068 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2024-05-13 15:22:17.240 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 11218 (auto-detected)
+[DEBUG] 2024-05-13 15:22:17.243 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2024-05-13 15:22:17.243 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2024-05-13 15:22:17.252 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2024-05-13 15:22:17.252 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2024-05-13 15:22:17.255 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2024-05-13 15:22:17.297 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2024-05-13 15:22:17.297 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2024-05-13 15:22:17.297 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@19b58b49
+[DEBUG] 2024-05-13 15:22:17.322 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2024-05-13 15:22:17.322 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2024-05-13 15:22:17.322 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2024-05-13 15:22:17.323 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2024-05-13 15:22:17.323 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2024-05-13 15:22:31.266 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[INFO ] 2024-05-13 15:23:01.266 [main] LoginFunctions - Login success!
+[DEBUG] 2024-05-13 15:26:34.081 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2024-05-13 15:26:34.092 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2024-05-13 15:26:34.092 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2024-05-13 15:26:34.095 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@49ef32e0
+[DEBUG] 2024-05-13 15:26:34.108 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2024-05-13 15:26:34.109 [main] PlatformDependent0 - Java version: 19
+[DEBUG] 2024-05-13 15:26:34.109 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2024-05-13 15:26:34.110 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2024-05-13 15:26:34.110 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2024-05-13 15:26:34.111 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2024-05-13 15:26:34.111 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2024-05-13 15:26:34.112 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2024-05-13 15:26:34.112 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @7cf10a6f
+[DEBUG] 2024-05-13 15:26:34.113 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[DEBUG] 2024-05-13 15:26:34.113 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2024-05-13 15:26:34.114 [main] PlatformDependent - maxDirectMemory: 4294967296 bytes (maybe)
+[DEBUG] 2024-05-13 15:26:34.114 [main] PlatformDependent - -Dio.netty.tmpdir: /var/folders/zr/572jgrt10ws3l2y8jwbmjs4h0000gq/T (java.io.tmpdir)
+[DEBUG] 2024-05-13 15:26:34.114 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2024-05-13 15:26:34.115 [main] PlatformDependent - Platform: MacOS
+[DEBUG] 2024-05-13 15:26:34.115 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2024-05-13 15:26:34.115 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2024-05-13 15:26:34.116 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2024-05-13 15:26:34.117 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2024-05-13 15:26:34.122 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2024-05-13 15:26:34.135 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2024-05-13 15:26:34.135 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2024-05-13 15:26:34.266 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2024-05-13 15:26:34.267 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2024-05-13 15:26:34.278 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2024-05-13 15:26:34.287 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+[DEBUG] 2024-05-13 15:26:34.295 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2024-05-13 15:26:34.295 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2024-05-13 15:26:34.320 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2024-05-13 15:26:34.321 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2024-05-13 15:26:34.330 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2024-05-13 15:26:34.330 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2024-05-13 15:26:34.330 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2024-05-13 15:26:34.478 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 11272 (auto-detected)
+[DEBUG] 2024-05-13 15:26:34.480 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2024-05-13 15:26:34.480 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2024-05-13 15:26:34.487 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2024-05-13 15:26:34.488 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2024-05-13 15:26:34.490 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2024-05-13 15:26:34.525 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2024-05-13 15:26:34.525 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2024-05-13 15:26:34.525 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7c4eb04
+[DEBUG] 2024-05-13 15:26:34.545 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2024-05-13 15:26:34.545 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2024-05-13 15:26:34.545 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2024-05-13 15:26:34.545 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2024-05-13 15:26:34.545 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2024-05-13 15:26:49.314 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[INFO ] 2024-05-13 15:27:18.088 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 15:28:57.911 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 15:29:29.983 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 15:29:38.334 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 15:29:43.182 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:29:49.618 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:30:36.167 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 15:30:44.571 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 15:30:49.397 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:30:52.467 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:31:02.780 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 15:31:14.632 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 15:31:18.876 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 15:31:22.763 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 15:31:31.865 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:31:32.869 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:31:37.942 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:31:43.691 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:31:51.398 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 15:32:05.984 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 15:33:14.764 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 15:33:23.287 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 15:33:36.297 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 15:34:58.197 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 15:35:07.147 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 15:35:14.334 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 15:35:19.239 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 15:35:19.487 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 15:35:21.640 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 15:35:33.620 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 15:35:44.014 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 15:35:55.466 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 15:35:57.686 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 15:36:40.306 [main] Setup - Device removed successfully
+[INFO ] 2024-05-13 15:37:25.844 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 15:40:13.226 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 15:40:45.395 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 15:40:54.050 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 15:40:59.056 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:41:05.332 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:41:52.355 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 15:42:01.032 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 15:42:05.900 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:42:09.140 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:42:18.716 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 15:42:32.433 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 15:42:36.636 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 15:42:40.636 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 15:42:54.059 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:42:55.063 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:43:00.279 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:43:06.215 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:43:14.067 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 15:43:29.938 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 15:44:38.899 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 15:44:47.379 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 15:45:04.249 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 15:46:26.969 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 15:46:35.707 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 15:46:42.582 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 15:46:47.231 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 15:46:47.538 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 15:46:49.802 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 15:47:03.301 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 15:47:18.296 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 15:47:27.771 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 15:47:30.227 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 15:48:27.414 [main] Setup - Device removed successfully
+[INFO ] 2024-05-13 15:49:13.699 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 15:52:59.010 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 15:53:31.212 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 15:53:39.785 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 15:53:44.813 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:53:51.413 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:54:38.782 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 15:54:47.229 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 15:54:51.969 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:54:55.272 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:55:05.338 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 15:55:19.644 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 15:55:23.928 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 15:55:27.966 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 15:55:40.606 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:55:41.610 [main] Setup - Trying to click
+[INFO ] 2024-05-13 15:55:46.978 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:55:52.780 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 15:56:00.829 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 15:56:16.814 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 15:57:25.837 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 15:57:35.901 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 15:57:52.853 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 15:59:17.226 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 15:59:26.347 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 15:59:30.616 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 15:59:35.367 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 15:59:35.577 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 15:59:37.813 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 15:59:51.491 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 16:00:05.748 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:00:15.601 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 16:00:18.044 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 16:01:13.505 [main] Setup - Device removed successfully
+[INFO ] 2024-05-13 16:01:59.848 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 16:04:32.898 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 16:05:04.998 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 16:05:13.558 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 16:05:18.221 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:05:25.001 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:06:12.257 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 16:06:20.847 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 16:06:25.773 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:06:28.989 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:06:39.159 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 16:06:52.638 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 16:06:56.905 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 16:07:00.932 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:07:15.075 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:07:16.079 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:07:21.619 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:07:27.567 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:07:35.619 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:07:51.326 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 16:09:00.557 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 16:09:08.814 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 16:09:27.969 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:10:50.218 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 16:10:59.043 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 16:11:04.740 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 16:11:09.449 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 16:11:09.705 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 16:11:11.838 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 16:11:25.311 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 16:11:39.669 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:11:49.453 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 16:11:51.918 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 16:12:45.582 [main] Setup - Device removed successfully
+[INFO ] 2024-05-13 16:13:30.835 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 16:16:01.774 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 16:16:33.916 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 16:16:42.671 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 16:16:47.558 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:16:54.219 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:17:41.554 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 16:17:50.168 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 16:17:55.056 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:17:58.353 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:18:08.715 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 16:18:22.586 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 16:18:26.981 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 16:18:30.956 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:18:44.372 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:18:45.382 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:18:50.870 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:18:56.900 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:19:04.863 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:19:20.896 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 16:20:30.106 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 16:20:38.744 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 16:20:55.823 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:22:18.480 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 16:22:27.283 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 16:22:33.085 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 16:22:37.900 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 16:22:38.159 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 16:22:40.313 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 16:22:55.533 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 16:23:10.228 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:23:22.026 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 16:23:24.638 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 16:24:16.150 [main] Setup - Device removed successfully
+[INFO ] 2024-05-13 16:25:02.405 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 16:27:29.602 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 16:28:01.509 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 16:28:10.171 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 16:28:15.154 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:28:21.770 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:29:09.358 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 16:29:17.939 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 16:29:22.866 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:29:26.188 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:29:36.591 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 16:29:50.420 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 16:29:55.010 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 16:29:59.183 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:30:12.471 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:30:13.472 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:30:18.992 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:30:25.160 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:30:33.685 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:30:49.893 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 16:31:59.066 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 16:32:07.436 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 16:32:24.772 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:33:47.216 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 16:33:55.911 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 16:34:01.645 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 16:34:06.415 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 16:34:06.695 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 16:34:08.910 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 16:34:22.482 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 16:34:37.313 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:34:47.433 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 16:34:50.044 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 16:35:40.404 [main] Setup - Device removed successfully
+[INFO ] 2024-05-13 16:36:28.590 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 16:39:02.197 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 16:39:34.348 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 16:39:43.117 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 16:39:48.119 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:39:54.953 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:40:42.607 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 16:40:51.260 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 16:40:56.234 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:40:59.800 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:41:10.244 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 16:41:24.074 [main] Setup - "'Not Connected' state can't be changed!"
+[INFO ] 2024-05-13 16:41:28.552 [main] Setup - Welcome to Routine Overview Screen!
+[INFO ] 2024-05-13 16:41:32.658 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:41:47.303 [main] Setup - Preferences for Stretching toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:41:48.309 [main] Setup - Trying to click
+[INFO ] 2024-05-13 16:41:53.833 [main] Setup - Preferences for Break toggle is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:41:59.822 [main] Setup - Preferences for Bluetooth Mode is same on Profile as Routine preference setting page.
+[INFO ] 2024-05-13 16:42:08.163 [main] Setup - Welcome back to Home Page!
+[INFO ] 2024-05-13 16:42:25.738 [main] Setup - 'TIP' is displayed instead of any routine player controls when Non BLE device is connected
+[INFO ] 2024-05-13 16:43:34.812 [main] Setup - Routine completion screen displayed!
+[INFO ] 2024-05-13 16:43:43.438 [main] Setup - Routine saved!!
+[INFO ] 2024-05-13 16:44:01.705 [main] Setup - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:45:24.282 [main] Setup - Routine is shown 'saved' on Routine Completion Screen
+[INFO ] 2024-05-13 16:45:33.247 [main] Setup - Removed saved routine from Routine Completion screen
+[INFO ] 2024-05-13 16:45:40.373 [main] Setup - Back to Routine Overview Screen
+[INFO ] 2024-05-13 16:45:45.167 [main] Setup - Back to Saved tab
+[INFO ] 2024-05-13 16:45:45.396 [main] Setup - Unsaved routine got removed from list of Saved routines
+[INFO ] 2024-05-13 16:45:47.759 [main] Setup - Welcome back to Homepage
+[INFO ] 2024-05-13 16:46:02.070 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 16:46:17.772 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 16:46:29.478 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 16:46:32.065 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 16:47:26.040 [main] Setup - Device removed successfully
+[DEBUG] 2024-05-13 16:48:54.650 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2024-05-13 16:48:54.660 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2024-05-13 16:48:54.660 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2024-05-13 16:48:54.664 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@61a5b4ae
+[DEBUG] 2024-05-13 16:48:54.675 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2024-05-13 16:48:54.675 [main] PlatformDependent0 - Java version: 19
+[DEBUG] 2024-05-13 16:48:54.676 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2024-05-13 16:48:54.677 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2024-05-13 16:48:54.677 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2024-05-13 16:48:54.678 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2024-05-13 16:48:54.678 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2024-05-13 16:48:54.678 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2024-05-13 16:48:54.679 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @7d417077
+[DEBUG] 2024-05-13 16:48:54.680 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[DEBUG] 2024-05-13 16:48:54.680 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2024-05-13 16:48:54.681 [main] PlatformDependent - maxDirectMemory: 4294967296 bytes (maybe)
+[DEBUG] 2024-05-13 16:48:54.681 [main] PlatformDependent - -Dio.netty.tmpdir: /var/folders/zr/572jgrt10ws3l2y8jwbmjs4h0000gq/T (java.io.tmpdir)
+[DEBUG] 2024-05-13 16:48:54.681 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2024-05-13 16:48:54.681 [main] PlatformDependent - Platform: MacOS
+[DEBUG] 2024-05-13 16:48:54.682 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2024-05-13 16:48:54.682 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2024-05-13 16:48:54.683 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2024-05-13 16:48:54.683 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2024-05-13 16:48:54.688 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2024-05-13 16:48:54.704 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2024-05-13 16:48:54.704 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2024-05-13 16:48:54.839 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2024-05-13 16:48:54.843 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2024-05-13 16:48:54.854 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2024-05-13 16:48:54.863 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+[DEBUG] 2024-05-13 16:48:54.869 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2024-05-13 16:48:54.870 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2024-05-13 16:48:54.892 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+[DEBUG] 2024-05-13 16:48:54.892 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+[DEBUG] 2024-05-13 16:48:54.892 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2024-05-13 16:48:54.893 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2024-05-13 16:48:54.904 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2024-05-13 16:48:54.904 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2024-05-13 16:48:54.904 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2024-05-13 16:48:55.059 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 13247 (auto-detected)
+[DEBUG] 2024-05-13 16:48:55.061 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2024-05-13 16:48:55.061 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2024-05-13 16:48:55.069 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2024-05-13 16:48:55.070 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2024-05-13 16:48:55.072 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2024-05-13 16:48:55.106 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2024-05-13 16:48:55.106 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2024-05-13 16:48:55.106 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@703d82f4
+[DEBUG] 2024-05-13 16:48:55.127 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2024-05-13 16:48:55.127 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2024-05-13 16:48:55.127 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2024-05-13 16:48:55.127 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2024-05-13 16:48:55.127 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2024-05-13 16:49:09.121 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[INFO ] 2024-05-13 16:49:39.647 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 16:53:36.037 [main] AddDeviceFunctions - Welcome back to HomeScreen!
+[INFO ] 2024-05-13 16:54:01.392 [main] Setup - Battery percentage is displayed
+[INFO ] 2024-05-13 16:54:23.966 [main] Setup - Quick start played successfully
+[INFO ] 2024-05-13 16:54:43.171 [main] Setup - Welcome back to HomeScreen!
+[INFO ] 2024-05-13 16:55:03.855 [main] WaveSeriesSoloFunctions - Next button clicked...Next step played!
+[INFO ] 2024-05-13 16:55:12.875 [main] WaveSeriesSoloFunctions - Previous button clicked...Previous step played!
+[INFO ] 2024-05-13 16:55:17.372 [main] WaveSeriesSoloFunctions - Routine playing stopped!!
+[INFO ] 2024-05-13 16:55:25.555 [main] WaveSeriesSoloFunctions - Routine overview screen closed!!
+[INFO ] 2024-05-13 16:56:01.826 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 16:56:34.181 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 16:56:42.603 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 16:56:48.287 [main] Setup - Trying to click
+[DEBUG] 2024-05-13 16:59:20.465 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2024-05-13 16:59:20.475 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2024-05-13 16:59:20.475 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2024-05-13 16:59:20.478 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@308a6984
+[DEBUG] 2024-05-13 16:59:20.489 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2024-05-13 16:59:20.489 [main] PlatformDependent0 - Java version: 19
+[DEBUG] 2024-05-13 16:59:20.490 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2024-05-13 16:59:20.490 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2024-05-13 16:59:20.490 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2024-05-13 16:59:20.491 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2024-05-13 16:59:20.491 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2024-05-13 16:59:20.492 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2024-05-13 16:59:20.492 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @49e4cb85
+[DEBUG] 2024-05-13 16:59:20.493 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[DEBUG] 2024-05-13 16:59:20.493 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2024-05-13 16:59:20.494 [main] PlatformDependent - maxDirectMemory: 4294967296 bytes (maybe)
+[DEBUG] 2024-05-13 16:59:20.494 [main] PlatformDependent - -Dio.netty.tmpdir: /var/folders/zr/572jgrt10ws3l2y8jwbmjs4h0000gq/T (java.io.tmpdir)
+[DEBUG] 2024-05-13 16:59:20.494 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2024-05-13 16:59:20.494 [main] PlatformDependent - Platform: MacOS
+[DEBUG] 2024-05-13 16:59:20.495 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2024-05-13 16:59:20.495 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2024-05-13 16:59:20.496 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2024-05-13 16:59:20.496 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2024-05-13 16:59:20.501 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2024-05-13 16:59:20.518 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2024-05-13 16:59:20.518 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2024-05-13 16:59:20.655 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2024-05-13 16:59:20.656 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2024-05-13 16:59:20.667 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2024-05-13 16:59:20.677 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+[DEBUG] 2024-05-13 16:59:20.684 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2024-05-13 16:59:20.684 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2024-05-13 16:59:20.706 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2024-05-13 16:59:20.707 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2024-05-13 16:59:20.716 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2024-05-13 16:59:20.717 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2024-05-13 16:59:20.717 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2024-05-13 16:59:20.858 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 13531 (auto-detected)
+[DEBUG] 2024-05-13 16:59:20.859 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2024-05-13 16:59:20.859 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2024-05-13 16:59:20.867 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2024-05-13 16:59:20.868 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2024-05-13 16:59:20.869 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2024-05-13 16:59:20.903 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2024-05-13 16:59:20.904 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2024-05-13 16:59:20.904 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@131724
+[DEBUG] 2024-05-13 16:59:20.922 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2024-05-13 16:59:20.922 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2024-05-13 16:59:20.922 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2024-05-13 16:59:20.923 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2024-05-13 16:59:20.923 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2024-05-13 16:59:35.461 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[INFO ] 2024-05-13 17:00:06.359 [main] LoginFunctions - Login success!
+[INFO ] 2024-05-13 17:04:03.646 [main] AddDeviceFunctions - Welcome back to HomeScreen!
+[INFO ] 2024-05-13 17:04:30.948 [main] Setup - Battery percentage is displayed
+[INFO ] 2024-05-13 17:04:52.194 [main] Setup - Quick start played successfully
+[INFO ] 2024-05-13 17:05:09.053 [main] Setup - Welcome back to HomeScreen!
+[INFO ] 2024-05-13 17:05:30.185 [main] WaveSeriesSoloFunctions - Next button clicked...Next step played!
+[INFO ] 2024-05-13 17:05:39.154 [main] WaveSeriesSoloFunctions - Previous button clicked...Previous step played!
+[INFO ] 2024-05-13 17:05:43.772 [main] WaveSeriesSoloFunctions - Routine playing stopped!!
+[INFO ] 2024-05-13 17:05:52.203 [main] WaveSeriesSoloFunctions - Routine overview screen closed!!
+[INFO ] 2024-05-13 17:06:28.483 [main] WaveSeriesSoloFunctions - Stretching step is displayed!
+[INFO ] 2024-05-13 17:07:00.713 [main] WaveSeriesSoloFunctions - Resumed once stretching step finished...Next step played!
+[INFO ] 2024-05-13 17:07:09.201 [main] WaveSeriesSoloFunctions - Routine overview screen appeared!!
+[INFO ] 2024-05-13 17:07:14.610 [main] Setup - Trying to click
+[INFO ] 2024-05-13 17:07:53.963 [main] WaveSeriesSoloFunctions - Stretching step not displayed!!
+[INFO ] 2024-05-13 17:08:08.386 [main] Setup - Trying to click
+[INFO ] 2024-05-13 17:08:13.969 [main] WaveSeriesSoloFunctions - Back to Routine overview screen!!
+[INFO ] 2024-05-13 17:08:18.500 [main] Setup - Trying to click
+[INFO ] 2024-05-13 17:08:24.871 [main] Setup - Trying to click
+[INFO ] 2024-05-13 17:09:12.440 [main] WaveSeriesSoloFunctions - Break time is being displayed between routine steps
+[INFO ] 2024-05-13 17:09:20.649 [main] WaveSeriesSoloFunctions - Routine player ended... Routine overview screen is here!
+[INFO ] 2024-05-13 17:09:25.338 [main] Setup - Trying to click
+[INFO ] 2024-05-13 17:09:28.422 [main] Setup - Trying to click
+[INFO ] 2024-05-13 17:09:38.544 [main] WaveSeriesSoloFunctions - Welcome back to Homepage
+[INFO ] 2024-05-13 17:09:51.919 [main] WaveSeriesSoloFunctions - Routine saved!!
+[INFO ] 2024-05-13 17:10:06.121 [main] WaveSeriesSoloFunctions - Bedtime Ritual - FOR QA ONLY routine is present on Saved tab
+[INFO ] 2024-05-13 17:10:17.900 [main] Setup - Removed saved routine from Saved tab
+[INFO ] 2024-05-13 17:10:20.386 [main] Setup - Welcome back to HomePage!
+[INFO ] 2024-05-13 17:11:12.637 [main] Setup - Device removed successfully
+[DEBUG] 2024-05-13 18:03:36.704 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2024-05-13 18:03:36.718 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2024-05-13 18:03:36.718 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2024-05-13 18:03:36.722 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@f325091
+[DEBUG] 2024-05-13 18:03:36.740 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2024-05-13 18:03:36.740 [main] PlatformDependent0 - Java version: 19
+[DEBUG] 2024-05-13 18:03:36.741 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2024-05-13 18:03:36.742 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2024-05-13 18:03:36.742 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2024-05-13 18:03:36.743 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2024-05-13 18:03:36.743 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2024-05-13 18:03:36.743 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2024-05-13 18:03:36.745 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @7dc36524
+[DEBUG] 2024-05-13 18:03:36.746 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[DEBUG] 2024-05-13 18:03:36.746 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2024-05-13 18:03:36.746 [main] PlatformDependent - maxDirectMemory: 4294967296 bytes (maybe)
+[DEBUG] 2024-05-13 18:03:36.746 [main] PlatformDependent - -Dio.netty.tmpdir: /var/folders/zr/572jgrt10ws3l2y8jwbmjs4h0000gq/T (java.io.tmpdir)
+[DEBUG] 2024-05-13 18:03:36.747 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2024-05-13 18:03:36.747 [main] PlatformDependent - Platform: MacOS
+[DEBUG] 2024-05-13 18:03:36.748 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2024-05-13 18:03:36.748 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2024-05-13 18:03:36.749 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2024-05-13 18:03:36.749 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2024-05-13 18:03:36.755 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2024-05-13 18:03:36.777 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2024-05-13 18:03:36.777 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2024-05-13 18:03:36.922 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2024-05-13 18:03:36.923 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2024-05-13 18:03:36.938 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2024-05-13 18:03:36.955 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+[DEBUG] 2024-05-13 18:03:36.965 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2024-05-13 18:03:36.965 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2024-05-13 18:03:36.995 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+[DEBUG] 2024-05-13 18:03:36.995 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+[DEBUG] 2024-05-13 18:03:36.995 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2024-05-13 18:03:36.995 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2024-05-13 18:03:36.996 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2024-05-13 18:03:37.006 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2024-05-13 18:03:37.006 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2024-05-13 18:03:37.006 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2024-05-13 18:03:37.187 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 16270 (auto-detected)
+[DEBUG] 2024-05-13 18:03:37.189 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2024-05-13 18:03:37.189 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2024-05-13 18:03:37.196 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[DEBUG] 2024-05-13 18:03:37.197 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[DEBUG] 2024-05-13 18:03:37.199 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[DEBUG] 2024-05-13 18:03:37.239 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2024-05-13 18:03:37.240 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2024-05-13 18:03:37.240 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5909043b
+[DEBUG] 2024-05-13 18:03:37.262 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2024-05-13 18:03:37.262 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2024-05-13 18:03:37.262 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2024-05-13 18:03:37.262 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2024-05-13 18:03:37.262 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2024-05-13 18:03:50.840 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.

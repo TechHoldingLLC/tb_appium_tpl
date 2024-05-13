@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Testing Therabody App" parallel="tests" thread-count="2">
+    <test name="Non BLE Flows by Device Name: WaveSeries Roller">
+        <parameter name="platform" value="Android"/>
+
+        <parameter name="email" value="karishma.barot@techholding.co"></parameter>
+        <parameter name="device" value="Roller"></parameter>
+        <classes>
+            <class name="testCases.LoginTCs"></class>
+            <class name="testCases.NonBLECommanTCs"></class>
+        </classes>
+    </test>
+
+
+    <test name="Non BLE Flows by Device Name: Theragun Mini">
+        <parameter name="platform" value="iOS"/>
+
+        <parameter name="email" value="karishma.barot+1@techholding.co"></parameter>
+        <parameter name="device" value="Theragun Mini"></parameter>
+        <classes>
+            <class name="testCases.LoginTCs"></class>
+            <class name="testCases.NonBLECommanTCs"></class>
+        </classes>
+    </test>
+
+
+</suite>
+

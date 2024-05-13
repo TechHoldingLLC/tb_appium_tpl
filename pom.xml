@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>TheraBodyAutomation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <android.api.level>30</android.api.level>
+        <suite-xml>test-suite/testNG.xml</suite-xml>
+        <argLine>-Dfile.encoding=UTF-8 -Xdebug -Xnoagent</argLine>
+    </properties>
+<dependencies>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.16.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>9.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>8.5.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-remote-driver</artifactId>
+        <version>4.13.0</version>
+    </dependency>
+    <dependency>
+        <groupId>me.hugmanrique</groupId>
+        <artifactId>cartage</artifactId>
+        <version>0.0.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.22.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.22.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+    <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        <version>2.25.0</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.7</version> <!-- Or the latest version available -->
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+    <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1.1</version>
+    </dependency>
+
+</dependencies>
+
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M5</version>
+                    <configuration>
+                        <forkCount>2</forkCount>
+                        <reuseForks>false</reuseForks>
+                        <perCoreThreadCount>true</perCoreThreadCount>
+                        <reportsDirectory>target/surefire-reports-2</reportsDirectory>
+                        <suiteXmlFiles>
+                            <!--<suiteXmlFile>${suite-xml}</suiteXmlFile>-->
+                            <suiteXmlFile>test-suite/testNG-iOS.xml</suiteXmlFile>
+                            <suiteXmlFile>test-suite/testNG-Android.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+                        <argLine>${argLine}</argLine>
+
+                    </configuration>
+                </plugin>
+                <!-- Maven Failsafe Plugin for integration tests -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.0.0-M5</version>
+                    <configuration>
+                        <threadCount>2</threadCount> <!-- Adjust thread count as needed -->
+                        <reuseForks>false</reuseForks>
+                        <perCoreThreadCount>true</perCoreThreadCount>
+                        <reportsDirectory>${project.build.directory}/failsafe-reports</reportsDirectory>
+                        <argLine>${argLine}</argLine>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+
+
+        </build>
+
+
+
+
+</project>

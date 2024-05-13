@@ -1,1 +1,1 @@
-# tb_appium_tpl
+# TheraBodyAutomation-Appium
