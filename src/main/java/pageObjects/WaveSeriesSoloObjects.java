@@ -4,7 +4,6 @@ import base.Setup;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -121,7 +120,7 @@ public class WaveSeriesSoloObjects extends Setup {
 
     //@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Right Hamstring\"]")
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Right Quad\"]")
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Right Hamstring']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Right Quad']")
     public WebElement step7;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\" \"]")
