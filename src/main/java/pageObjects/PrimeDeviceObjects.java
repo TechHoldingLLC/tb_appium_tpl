@@ -34,6 +34,7 @@ public class PrimeDeviceObjects extends Setup {
     public WebElement start;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"pause\"]")
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageButton[1]")
     public WebElement pause;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeImage[contains(@name, \"ic_battery_status_\")]")
@@ -49,6 +50,7 @@ public class PrimeDeviceObjects extends Setup {
     public WebElement homeTab;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"arrowLeft\"]")
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[1]")
     public WebElement backFromQuick;
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Forget Device\"]")

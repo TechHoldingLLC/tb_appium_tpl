@@ -121,7 +121,13 @@ public class PrimeDeviceFunctions extends Setup {
         waitForElementClickAbility(primeObj.pause);
         System.out.println("Quick start played successfully");
         log.info("Quick start played successfully");
-        waitForElementClickAbility(primeObj.backFromQuick);
+        try {
+            waitForElementClickAbility(primeObj.backFromQuick);
+        }catch (TimeoutException e){
+            Point p = getCenterCoordinates(primeObj.backFromQuick);
+            action_clickOnPosition(p.getX(), p.getY());
+        }
+
 
         if (platform_param.equalsIgnoreCase("Android")) {
             Point centerPoint = getCenterCoordinates(waveSeriesSoloObject.closeDeviceManager);

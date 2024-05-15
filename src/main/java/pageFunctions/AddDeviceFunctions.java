@@ -55,7 +55,11 @@ public class AddDeviceFunctions extends Setup {
         //waitForElementClickAbility(obj.skipDeviceOnboarding);
         waitForElementClickAbility(obj.primeOnboarding1);
         Thread.sleep(5000);
-        waitForElementClickAbility(obj.closeRoutinePlayer);
+        if(platform_param.equalsIgnoreCase("Android")){
+            waitForElementClickAbility(obj.pauseRoutine);
+        }
+            waitForElementClickAbility(obj.closeRoutinePlayer);
+
         waitForElementClickAbility(obj.endRoutine);
 
         waitForElementClickAbility(obj.primeOnboarding2);
